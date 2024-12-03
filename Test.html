@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💐 For You 💖</title>
+    <style>
+        /* พื้นหลัง */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #ff99cc, #ffccff);
+            color: #4A154B;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* หัวข้อ */
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            color: #8A2BE2;
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #4A154B;
+            margin: 10px 0;
+        }
+
+        /* การตกแต่งรูป */
+        .flower {
+            margin-top: 30px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: float 3s infinite ease-in-out;
+        }
+
+        /* เอฟเฟกต์ลอย */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* ปุ่ม */
+        .btn-love {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #FF69B4;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-love:hover {
+            background-color: #FF1493;
+            transform: scale(1.1);
+        }
+
+        /* เอฟเฟกต์หัวใจลอย */
+        .heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #FF69B4;
+            clip-path: polygon(50% 0%, 100% 38%, 80% 100%, 50% 80%, 20% 100%, 0% 38%);
+            animation: floatHeart 6s infinite ease-in-out;
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- หัวข้อ -->
+    <h1>ดอกไม้สวย ๆ ให้พี่แก้วของมายมิ้น 💐</h1>
+    <p>เพราะพี่แก้วคือคนที่พิเศษที่สุดในชีวิตเค้า 🌸</p>
+
+    <!-- รูปดอกไม้ -->
+    <img src="https://cdn.discordapp.com/attachments/1293247918379372658/1313432274829709373/c5eef1671db3a7dd9f5259b41cbd64c9.png?ex=67501ca0&is=674ecb20&hm=941d4c1011631bfc0ed4ed289a8d8bd103a5d370c811b57919b575997b9e1bdc&🌸" alt="ดอกไม้" class="flower">
+
+    <!-- คำคม -->
+    <p>🌟 "พี่แก้วคือคนที่น่ารักที่สู๊ดด" 🌟</p>
+
+    <!-- ปุ่ม -->
+    <button class="btn-love" onclick="showLove()">กดเพื่อรับความรัก 💖</button>
+
+    <!-- เอฟเฟกต์หัวใจ -->
+    <div class="heart" style="top: 50%; left: 30%; animation-delay: 0s;"></div>
+    <div class="heart" style="top: 70%; left: 60%; animation-delay: 1s;"></div>
+    <div class="heart" style="top: 30%; left: 80%; animation-delay: 2s;"></div>
+    <div class="heart" style="top: 80%; left: 20%; animation-delay: 3s;"></div>
+
+    <script>
+        function showLove() {
+            alert('มายมิ้นขอโทษนะคะที่ลืมวันครอบ แต่มายมิ้นรักคพี่แก้วที่สุดในโลกเลยนะคะ! ❤️');
+        }
+    </script>
+</body>
+</html>
